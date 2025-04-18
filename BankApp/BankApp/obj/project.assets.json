@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Y:\\WindowsZone\\ISE102\\BankApp\\BankApp\\BankApp.csproj",
+      "projectUniqueName": "Y:\\WindowsZone\\drvGit\\ise102\\BankApp\\BankApp\\BankApp.csproj",
       "projectName": "BankApp",
-      "projectPath": "Y:\\WindowsZone\\ISE102\\BankApp\\BankApp\\BankApp.csproj",
+      "projectPath": "Y:\\WindowsZone\\drvGit\\ise102\\BankApp\\BankApp\\BankApp.csproj",
       "packagesPath": "C:\\Users\\b3\\.nuget\\packages\\",
-      "outputPath": "Y:\\WindowsZone\\ISE102\\BankApp\\BankApp\\obj\\",
+      "outputPath": "Y:\\WindowsZone\\drvGit\\ise102\\BankApp\\BankApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
