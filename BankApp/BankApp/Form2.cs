@@ -13,6 +13,7 @@ namespace BankApp
 {
     public partial class frmPassword : Form
     {
+        
         public frmPassword()
         {
             InitializeComponent();
@@ -20,25 +21,45 @@ namespace BankApp
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            string strMessage = "";
             //calculate hashPasswor from current pass
             string hashPass = Program.toolObj.CreateHash(mskCurPass.Text);
 
             // compare hashPass with Global Hash, compare NewPass with ConfirmPass
-            if ((hashPass == Program.hashPassWord) && (txtConPass.Text == txtNewPass.Text))
+            if (hashPass == Program.hashPassWord)
             {
-                //calculate the hash, save to global hashPassword
-                Program.hashPassWord = Program.toolObj.CreateHash(txtNewPass.Text);
+                if (txtNewPass.Text==txtConPass.Text)
+                {
+                    if (Program.toolObj.CheckPassFormat(txtNewPass.Text, ref strMessage))
+                    {
+                        // everything okay
+                        //calculate the hash, save to global hashPassword
+                        Program.hashPassWord = Program.toolObj.CreateHash(txtNewPass.Text);
 
-                // save to config file, keep User Name, hashPassword
-                Program.toolObj.WriteToFile("bkPass.txt", Program.userName + "#" + Program.hashPassWord);
+                        // save to config file, keep User Name, hashPassword
+                        Program.toolObj.WriteToFile("bkPass.txt", Program.userName + "#" + Program.hashPassWord);
 
-                // close this form, goback to main form.
-                Program.fmBank.Show();
-                this.Close();
+                        // close this form, goback to main form.
+                        Program.fmBank.Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        //not okay, show message
+                        MessageBox.Show(strMessage, "Change Password Failed");
+                    }                       
+                }
+                else
+                {
+                    // not match
+                    MessageBox.Show("New password and confirmation do not match", "Change Password Failed");
+                }
+
             }
             else
             {
-                MessageBox.Show("Check your password!", "Change Password Failed");
+                // wrong current password
+                MessageBox.Show("Check your current password!", "Change Password Failed");
             }
         }
 

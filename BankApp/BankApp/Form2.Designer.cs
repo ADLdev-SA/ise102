@@ -35,7 +35,6 @@
             label3 = new Label();
             txtNewPass = new TextBox();
             txtConPass = new TextBox();
-            lblStatus = new Label();
             fontDialog1 = new FontDialog();
             mskCurPass = new MaskedTextBox();
             pictureBox1 = new PictureBox();
@@ -47,7 +46,7 @@
             btnUpdate.Location = new Point(662, 290);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(189, 65);
-            btnUpdate.TabIndex = 0;
+            btnUpdate.TabIndex = 4;
             btnUpdate.Text = "&Update";
             btnUpdate.UseVisualStyleBackColor = true;
             btnUpdate.Click += btnUpdate_Click;
@@ -84,23 +83,14 @@
             txtNewPass.Location = new Point(445, 143);
             txtNewPass.Name = "txtNewPass";
             txtNewPass.Size = new Size(406, 39);
-            txtNewPass.TabIndex = 5;
+            txtNewPass.TabIndex = 2;
             // 
             // txtConPass
             // 
             txtConPass.Location = new Point(445, 211);
             txtConPass.Name = "txtConPass";
             txtConPass.Size = new Size(406, 39);
-            txtConPass.TabIndex = 6;
-            // 
-            // lblStatus
-            // 
-            lblStatus.AutoSize = true;
-            lblStatus.Location = new Point(12, 367);
-            lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(78, 32);
-            lblStatus.TabIndex = 7;
-            lblStatus.Text = "Status";
+            txtConPass.TabIndex = 3;
             // 
             // mskCurPass
             // 
@@ -108,7 +98,7 @@
             mskCurPass.Name = "mskCurPass";
             mskCurPass.PasswordChar = '*';
             mskCurPass.Size = new Size(406, 39);
-            mskCurPass.TabIndex = 8;
+            mskCurPass.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -124,10 +114,9 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(891, 408);
+            ClientSize = new Size(876, 384);
             Controls.Add(pictureBox1);
             Controls.Add(mskCurPass);
-            Controls.Add(lblStatus);
             Controls.Add(txtConPass);
             Controls.Add(txtNewPass);
             Controls.Add(label3);
@@ -157,7 +146,6 @@
         private Label label3;
         private TextBox txtNewPass;
         private TextBox txtConPass;
-        private Label lblStatus;
         private FontDialog fontDialog1;
         private MaskedTextBox mskCurPass;
         private PictureBox pictureBox1;

@@ -76,21 +76,21 @@
             mskUPass.Name = "mskUPass";
             mskUPass.PasswordChar = '*';
             mskUPass.Size = new Size(565, 39);
-            mskUPass.TabIndex = 3;
+            mskUPass.TabIndex = 2;
             // 
             // txtUName
             // 
             txtUName.Location = new Point(282, 210);
             txtUName.Name = "txtUName";
             txtUName.Size = new Size(565, 39);
-            txtUName.TabIndex = 4;
+            txtUName.TabIndex = 1;
             // 
             // btnLogin
             // 
             btnLogin.Location = new Point(451, 393);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(181, 62);
-            btnLogin.TabIndex = 5;
+            btnLogin.TabIndex = 3;
             btnLogin.Text = "&Login";
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += btnLogin_Click;
@@ -100,7 +100,7 @@
             btnClose.Location = new Point(666, 393);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(181, 62);
-            btnClose.TabIndex = 6;
+            btnClose.TabIndex = 4;
             btnClose.Text = "&Close";
             btnClose.UseVisualStyleBackColor = true;
             btnClose.Click += btnClose_Click;
@@ -130,6 +130,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = btnClose;
             ClientSize = new Size(930, 529);
             Controls.Add(pictureBox2);
             Controls.Add(label3);

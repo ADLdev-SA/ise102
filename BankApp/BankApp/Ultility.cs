@@ -8,6 +8,7 @@ using System.Security.Cryptography;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using System.Reflection.Metadata;
+using System.Text.RegularExpressions;
 
 namespace BankApp
 {
@@ -85,7 +86,45 @@ namespace BankApp
             strID = rnd.Next(100000000, 999999999).ToString();
             return strID;
         }
-        
+
+        public bool CheckPassFormat(string txtPass, ref string strMessage)
+        {
+            int minLength = 8;
+
+            if (txtPass.Length < minLength)
+            { 
+                strMessage = "Password is too short. Minimum 8 characters required.";
+                return false;
+            }
+
+            if (!Regex.IsMatch(txtPass, "[A-Z]"))
+            {
+                strMessage = "Password must contain at least one uppercase letter.";
+                return false;
+            }
+ 
+            if (!Regex.IsMatch(txtPass, "[a-z]"))
+            {
+                strMessage = "Password must contain at least one lowercase letter.";
+                return false;
+            }
+
+            if (!Regex.IsMatch(txtPass, "[0-9]"))
+            {
+                strMessage = "Password must contain at least one number.";
+                return false;
+            }
+
+            if (!Regex.IsMatch(txtPass, "[^a-zA-Z0-9]"))
+            {
+                strMessage = "Password must contain at least one special character.";
+                return false;
+            }
+
+            strMessage = "Password is valid.";
+            return true;
+        }
+
     }
 
 }

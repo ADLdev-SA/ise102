@@ -97,6 +97,7 @@
             txtID.ReadOnly = true;
             txtID.Size = new Size(393, 39);
             txtID.TabIndex = 5;
+            txtID.TabStop = false;
             // 
             // txtName
             // 
@@ -105,6 +106,7 @@
             txtName.ReadOnly = true;
             txtName.Size = new Size(393, 39);
             txtName.TabIndex = 6;
+            txtName.TabStop = false;
             // 
             // txtMoney
             // 
@@ -112,7 +114,7 @@
             txtMoney.Location = new Point(126, 154);
             txtMoney.Name = "txtMoney";
             txtMoney.Size = new Size(393, 39);
-            txtMoney.TabIndex = 7;
+            txtMoney.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -141,14 +143,14 @@
             vScrollBar1.Maximum = 4;
             vScrollBar1.Name = "vScrollBar1";
             vScrollBar1.Size = new Size(25, 158);
-            vScrollBar1.TabIndex = 10;
+            vScrollBar1.TabIndex = 1;
             vScrollBar1.Scroll += vScrollBar1_Scroll;
             // 
             // frmTrans
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(553, 302);
+            ClientSize = new Size(549, 298);
             ControlBox = false;
             Controls.Add(vScrollBar1);
             Controls.Add(lblStat);

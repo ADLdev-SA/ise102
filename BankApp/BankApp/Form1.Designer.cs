@@ -70,7 +70,7 @@
             btnTransfer.Location = new Point(34, 170);
             btnTransfer.Name = "btnTransfer";
             btnTransfer.Size = new Size(204, 84);
-            btnTransfer.TabIndex = 4;
+            btnTransfer.TabIndex = 2;
             btnTransfer.Text = "&Transfer";
             btnTransfer.UseVisualStyleBackColor = true;
             btnTransfer.Click += btnTransfer_Click;
@@ -106,7 +106,7 @@
             vScrollBar1.Maximum = 4;
             vScrollBar1.Name = "vScrollBar1";
             vScrollBar1.Size = new Size(28, 177);
-            vScrollBar1.TabIndex = 6;
+            vScrollBar1.TabIndex = 1;
             vScrollBar1.Scroll += vScrollBar1_Scroll;
             // 
             // pictureBox1
@@ -124,7 +124,7 @@
             btnWithdraw.Location = new Point(317, 170);
             btnWithdraw.Name = "btnWithdraw";
             btnWithdraw.Size = new Size(204, 84);
-            btnWithdraw.TabIndex = 9;
+            btnWithdraw.TabIndex = 3;
             btnWithdraw.Text = "&Withdraw";
             btnWithdraw.UseVisualStyleBackColor = true;
             btnWithdraw.Click += btnWithdraw_Click;
@@ -135,7 +135,7 @@
             btnDeposit.Location = new Point(598, 170);
             btnDeposit.Name = "btnDeposit";
             btnDeposit.Size = new Size(204, 84);
-            btnDeposit.TabIndex = 10;
+            btnDeposit.TabIndex = 4;
             btnDeposit.Text = "&Deposit";
             btnDeposit.UseVisualStyleBackColor = true;
             btnDeposit.Click += btnDeposit_Click;
@@ -171,8 +171,10 @@
             txtBalance.ForeColor = Color.Navy;
             txtBalance.Location = new Point(0, 0);
             txtBalance.Name = "txtBalance";
+            txtBalance.ReadOnly = true;
             txtBalance.Size = new Size(815, 107);
             txtBalance.TabIndex = 0;
+            txtBalance.TabStop = false;
             txtBalance.Text = "250000";
             txtBalance.TextAlign = HorizontalAlignment.Center;
             // 
@@ -181,7 +183,7 @@
             btnClose.Location = new Point(598, 751);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(204, 84);
-            btnClose.TabIndex = 12;
+            btnClose.TabIndex = 6;
             btnClose.Text = "&Close";
             btnClose.UseVisualStyleBackColor = true;
             btnClose.Click += btnClose_Click;
@@ -217,6 +219,7 @@
             listView1.Name = "listView1";
             listView1.Size = new Size(815, 217);
             listView1.TabIndex = 0;
+            listView1.TabStop = false;
             listView1.UseCompatibleStateImageBehavior = false;
             // 
             // btnPassword
@@ -224,7 +227,7 @@
             btnPassword.Location = new Point(317, 752);
             btnPassword.Name = "btnPassword";
             btnPassword.Size = new Size(204, 84);
-            btnPassword.TabIndex = 14;
+            btnPassword.TabIndex = 5;
             btnPassword.Text = "&Password";
             btnPassword.UseVisualStyleBackColor = true;
             btnPassword.Click += btnPassword_Click;
