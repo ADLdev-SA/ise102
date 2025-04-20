@@ -73,6 +73,7 @@
             btnTransfer.TabIndex = 4;
             btnTransfer.Text = "&Transfer";
             btnTransfer.UseVisualStyleBackColor = true;
+            btnTransfer.Click += btnTransfer_Click;
             // 
             // groupBox3
             // 
@@ -87,7 +88,6 @@
             groupBox3.TabIndex = 8;
             groupBox3.TabStop = false;
             groupBox3.Text = "Client";
-       
             // 
             // lblID
             // 
@@ -101,9 +101,9 @@
             // vScrollBar1
             // 
             vScrollBar1.Dock = DockStyle.Left;
-            vScrollBar1.LargeChange = 2;
+            vScrollBar1.LargeChange = 1;
             vScrollBar1.Location = new Point(3, 35);
-            vScrollBar1.Maximum = 5;
+            vScrollBar1.Maximum = 4;
             vScrollBar1.Name = "vScrollBar1";
             vScrollBar1.Size = new Size(28, 177);
             vScrollBar1.TabIndex = 6;
@@ -127,6 +127,7 @@
             btnWithdraw.TabIndex = 9;
             btnWithdraw.Text = "&Withdraw";
             btnWithdraw.UseVisualStyleBackColor = true;
+            btnWithdraw.Click += btnWithdraw_Click;
             // 
             // btnDeposit
             // 

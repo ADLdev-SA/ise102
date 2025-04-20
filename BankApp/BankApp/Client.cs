@@ -12,7 +12,7 @@ namespace BankApp
      //   private string _ID;
       //  private string _name;
             // Properties
-            public int Id { get; set; }
+            public string Id { get; set; }
             public string Name { get; set; }
 
             public int Balance { get; set; }
@@ -20,7 +20,7 @@ namespace BankApp
         // Constructor
 
         // Constructor
-        public Client(int id, string name, int balance)
+        public Client(string id, string name, int balance)
             {
                 Id = id;
                 Name = name;

@@ -78,6 +78,14 @@ namespace BankApp
 
             return content;
         }
+        public string SetID()
+        {
+            string strID = "";
+            Random rnd = new Random();
+            strID = rnd.Next(100000000, 999999999).ToString();
+            return strID;
+        }
+        
     }
 
 }

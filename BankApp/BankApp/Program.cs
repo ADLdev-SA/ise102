@@ -1,3 +1,4 @@
+using System.Net.NetworkInformation;
 using System.Windows.Forms;
 
 namespace BankApp
@@ -19,6 +20,8 @@ namespace BankApp
 
         public static Client[] clients = new Client[5];
 
+        public static int intCurrentUser = 1;
+
         [STAThread]
 
         static void Main()
@@ -29,11 +32,11 @@ namespace BankApp
             ApplicationConfiguration.Initialize();
 
             // Initializing Clients
-            clients[0] = new Client(1, "Alice Mark", 250000);
-            clients[1] = new Client(2, "Bob King", 607000);
-            clients[2] = new Client(3, "Charlie Brown",478993);
-            clients[3] = new Client(4, "Clara Mayor",83672);
-            clients[4] = new Client(5, "David John",231987);
+            clients[0] = new Client(toolObj.SetID(), "Alice Mark", 250000);
+            clients[1] = new Client(toolObj.SetID(), "Bob King", 607000);
+            clients[2] = new Client(toolObj.SetID(), "Charlie Brown",478993);
+            clients[3] = new Client(toolObj.SetID(), "Clara Mayor",83672);
+            clients[4] = new Client(toolObj.SetID(), "David John",231987);
 
             // Show login form
             Application.Run(fmLog);
