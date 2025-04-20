@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace BankApp
 {
-    // USE THIS CODE TO SHOW INFOR OF CLIENTS
+    //
+    // TO DO:
+    /* 
+    Build the client class here. 
+    This class will be the base class for the clients including: 
+    ID code, name, age, gender, DOB, address, phone number, and email.
+    */
     internal class Client
     {
      //   private string _ID;

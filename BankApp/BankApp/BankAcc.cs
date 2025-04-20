@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 //
 // STUDENTS WRITE YOUR CODE HERE
-// 
+/*
+    TO DO:
+    Build the BankAcc class here. 
+    Inherit from the base class Client. 
+    1. Add properties: 
+        Account opening date, initial deposit amount to the account. 
+        Constructor is created based on the constructor of the base class, 
+        initializing the initial value of the account. 
+    2. Add methods: 
+        transfer, deposit, withdraw. Check the validity of the transaction. 
+        Only transfer or withdraw money when the current amount is greater than or 
+        equal to the amount transferred. Deposit must be an amount greater than 0.
+    3. Add Testcases: 
+        Write Unit Tests for these methods.
+    */
 namespace BankApp
 {
     internal class BankAcc
