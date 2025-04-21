@@ -5,10 +5,10 @@ This template code is used for Assignment 3. Please check Assignment 3 Task for 
 
 1. Basic coding skills for C# programming language
 2. Object-oriented programming OOP:
-- Build a base class Client with basic properties, basic methods (deposit)
+- Build a base class Client with basic properties, basic methods (SetID)
 - Build BankAcc that inheritted from the base class, build a constructor.
-- Build a method in the BankAcc class, override the deposit method in the base class. 
-- Create new methods: Transfer and Withdraw.
+- Build a method in the BankAcc class, override the SetID method in the base class. 
+- Create new methods: Transfer, Withdraw and Deposit.
 3. Build Unit Test for the code of the BankAcc class.
 4. Attached documents:
 - UML diagram describing the flow of BankApp
