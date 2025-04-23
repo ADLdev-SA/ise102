@@ -1,7 +1,7 @@
 # ISE102 - Introduction to Software Engineering
 # Class Code: 1004
 
-This template code is used for Assignment 3. Please check Assignment 3 Task for detail reference. The requirements include:
+This template is used for Assignment 3. Please check Assignment 3 Task for reference. The requirements include:
 
 1. Basic coding skills for C# programming language
 2. Object-oriented programming OOP:
@@ -13,7 +13,7 @@ This template code is used for Assignment 3. Please check Assignment 3 Task for 
 4. Attached documents:
 - UML diagram describing the flow of BankApp
 - UML diagram describing the Client and BankAcc classes. 
-- Add more UML => bonus mark.
+- Add more UML diagram => bonus mark.
 5. Detail comments.
 6. Report has screenshots and notes. The video presentation must clearly explain these screenshots.
 
