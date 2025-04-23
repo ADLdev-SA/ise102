@@ -18,3 +18,5 @@ This template is used for Assignment 3. Please check Assignment 3 Task for refer
 6. Report has screenshots and notes. The video presentation must clearly explain these screenshots.
 
 => Submit Assignment 3: code zip file + report + recorded video (or link).
+
+Task done
