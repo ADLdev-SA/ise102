@@ -12,7 +12,7 @@ This template is used for Assignment 3. Please check Assignment 3 Task for refer
 - Build a method in the BankAcc class, override the SetID() method in the base class
 - Create new methods: Transfer(), Withdraw() and Deposit()
 
-**3. Build Unit Test for the code of the BankAcc class.()**
+**3. Build Unit Test for the code of the BankAcc class**
 
 **4. Attached documents:**
 - UML diagram describing the flow of BankApp
@@ -21,8 +21,11 @@ This template is used for Assignment 3. Please check Assignment 3 Task for refer
 
 **5. Detail comments.**
 
-**6. Report has screenshots and notes. The video presentation must clearly explain these screenshots**
+**6. Report has screenshots and notes:**
+- The video presentation must clearly explain these screenshots
 
-=> Submit Assignment 3: code zip file + report + recorded video (or link).
+**7. Submit Assignment 3:** 
 
-**Task done**
+- Code zip file + report + recorded video (or link).
+
+**Task Done**
