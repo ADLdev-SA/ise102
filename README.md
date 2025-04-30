@@ -10,7 +10,8 @@ This template is used for Assignment 3. Please check Assignment 3 Task for refer
 - Build a base class Client with basic properties, basic methods SetID()
 - Build BankAcc that inheritted from the base class, build a constructor
 - Build a method in the BankAcc class, override the SetID() method in the base class
-- Create new methods: Transfer(), Withdraw() and Deposit()
+- Create new methods: Withdraw() and Deposit(). The balance change when you use VScrollBar
+- Modify lines 32-36 in Program.cs to initialize the array for Clients. (cos have more properties)
 
 **3. Build Unit Test for the code of the BankAcc class**
 
