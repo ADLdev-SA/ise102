@@ -43,6 +43,8 @@ namespace BankApp
             {
                 
                 // write the code for withdraw
+                // check if the current account have enough money: amount<balance, amount>0
+                // return true if success, otherwise false
 
                 return true;
             }
@@ -50,6 +52,8 @@ namespace BankApp
             public bool Deposit(decimal amount)
             {
                 // write the code for deposit here
+                // check if amount >0
+                // return true if success, otherwise false
                 return true;
             }
 
