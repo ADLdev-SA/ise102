@@ -15,66 +15,51 @@ using System.Threading.Tasks;
         Constructor is created based on the constructor of the base class, 
         initializing the initial value of the account. 
     2. Add methods: 
-        transfer, deposit, withdraw. Check the validity of the transaction. 
+        deposit, withdraw. Check the validity of the transaction. 
         Only transfer or withdraw money when the current amount is greater than or 
-        equal to the amount transferred. Deposit must be an amount greater than 0.
+        equal to the amount transferred. Deposit must be an amount greater than 0. 
+        When done, the money in balance will be changed. 
     3. Add Testcases: 
         Write Unit Tests for these methods.
     */
 namespace BankApp
-{
-    internal class BankAcc
-    {
-        private decimal balance; // stores the account balance
-
-        // Account constructor initializes instance variable balance
-        public BankAcc(decimal initialBalance)
+{  
+        internal class BankAcc : Client
         {
-            Balance = initialBalance; // validate balance via property
-        }
+            public decimal Balance { get; set; }
 
-        // credit the account balance by amount
-        public virtual bool Credit(decimal amount)
-        {
-            Balance += amount; // add amount to balance
-            return true;
-        }
-
-        // debit the account balance by amount;
-        // return bool indicating whether debit was successful
-        public virtual bool Debit(decimal amount)
-        {
-            if (amount > Balance) // debit amount exceeds balance
+            public BankAcc(string strID, string name, decimal initialBalance) : base(strID, name) 
             {
-                Console.WriteLine("Debit amount exceeded account balance.");
-                return false;
+                Balance = initialBalance;
             }
-            else // debit amount does not exceed balance
+
+            // Override Deposit to include some extra behavior
+            public override void SetID(string strID)
             {
-                Balance -= amount;
+                //TODO: Override this method,     
+
+            }
+            public bool Withdraw(decimal amount)
+            {
+                
+                // write the code for withdraw
+
                 return true;
             }
-        }
 
-        // property that gets and sets the account balance
-        public decimal Balance
-        {
-            get
+            public bool Deposit(decimal amount)
             {
-                return balance;
+                // write the code for deposit here
+                return true;
             }
-            set
-            {
-                // if value is greater than or equal to 0.0, 
-                // set value as the balance of the Account
-                if (value < 0.0M)
-                {
-                    throw new ArgumentOutOfRangeException();
-                }
 
-                balance = value;
+
+            public void Transfer(decimal amount)
+            {
+                // No need; if you want to transfer $10 from A to B, then do like this
+                // A.WithDraw(10)
+                // B.Deposit(10)
             }
-        }
 
     }
 }

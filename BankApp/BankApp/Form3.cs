@@ -33,14 +33,17 @@ namespace BankApp
         {
             string hashPass = Program.toolObj.CreateHash(mskUPass.Text);
 
-            string data = Program.toolObj.ReadFromFile("bkPass.txt");
+           string data = Program.toolObj.ReadFromFile("bkPass.txt");
 
             // Split by #
-            string[] logParams = data.Split('#');
+           string[] logParams = data.Split('#');
+
+            // label4.Text = Program.toolObj.CreateHash(mskUPass.Text);
 
             Program.userName = logParams[0];
             Program.hashPassWord = logParams[1];
 
+            // label4.Text = hashPass;
 
             if ((txtUName.Text == Program.userName) & (hashPass == Program.hashPassWord))
             {
@@ -51,7 +54,6 @@ namespace BankApp
             {
                 MessageBox.Show("Invalid user ID or password!", "Login failed");
             }
-
         }
 
         private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)

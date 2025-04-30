@@ -114,7 +114,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(876, 384);
+            ClientSize = new Size(903, 413);
             Controls.Add(pictureBox1);
             Controls.Add(mskCurPass);
             Controls.Add(txtConPass);
@@ -123,11 +123,11 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btnUpdate);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;
             Name = "frmPassword";
-            ShowIcon = false;
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Change Password";

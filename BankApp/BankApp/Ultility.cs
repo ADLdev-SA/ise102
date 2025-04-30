@@ -18,6 +18,7 @@ namespace BankApp
     {
         public string CreateHash(string input)
         {
+            //Create hashpassword from Original Pass, encrypted password
             using (SHA256 sha256 = SHA256.Create())
             {
                 // String to byte
@@ -37,6 +38,7 @@ namespace BankApp
         }
         public void WriteToFile(string fname, string content)
         {
+            //Write password file, save new password
             string fileName = fname;
 
             // current path
@@ -54,6 +56,7 @@ namespace BankApp
         }
         public string ReadFromFile(string fname)
         {
+            //Read password file, return string with Acc#HashPass
             string fileName = fname;
 
             // current path
@@ -81,14 +84,27 @@ namespace BankApp
         }
         public string SetID()
         {
+            // Generate a long random number, fake Client ID
             string strID = "";
             Random rnd = new Random();
             strID = rnd.Next(100000000, 999999999).ToString();
             return strID;
         }
 
+        public string TransID()
+        {
+            // Generate a shot random number, fake transaction ID.
+            string strID = "";
+            Random rnd = new Random();
+            strID = rnd.Next(1000, 9999).ToString();
+            return strID;
+        }
+
         public bool CheckPassFormat(string txtPass, ref string strMessage)
         {
+            //This method check password with conditions:
+            // length >=8
+            // Uppercase + Lowercase + 0-9 + Symbol
             int minLength = 8;
 
             if (txtPass.Length < minLength)

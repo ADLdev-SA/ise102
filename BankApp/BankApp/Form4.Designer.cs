@@ -72,7 +72,7 @@
             // 
             // btnOk
             // 
-            btnOk.Location = new Point(189, 222);
+            btnOk.Location = new Point(190, 232);
             btnOk.Name = "btnOk";
             btnOk.Size = new Size(150, 46);
             btnOk.TabIndex = 3;
@@ -82,7 +82,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(369, 222);
+            button2.Location = new Point(370, 232);
             button2.Name = "button2";
             button2.Size = new Size(150, 46);
             button2.TabIndex = 4;
@@ -139,7 +139,7 @@
             // vScrollBar1
             // 
             vScrollBar1.LargeChange = 1;
-            vScrollBar1.Location = new Point(522, 35);
+            vScrollBar1.Location = new Point(534, 35);
             vScrollBar1.Maximum = 4;
             vScrollBar1.Name = "vScrollBar1";
             vScrollBar1.Size = new Size(25, 158);
@@ -150,7 +150,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(549, 298);
+            ClientSize = new Size(583, 330);
             ControlBox = false;
             Controls.Add(vScrollBar1);
             Controls.Add(lblStat);
@@ -164,12 +164,13 @@
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmTrans";
-            ShowIcon = false;
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form4";
             TopMost = true;
+            FormClosed += frmTrans_FormClosed;
             Load += frmTrans_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

@@ -33,6 +33,7 @@
             lblName = new Label();
             btnTransfer = new Button();
             groupBox3 = new GroupBox();
+            label1 = new Label();
             lblID = new Label();
             vScrollBar1 = new VScrollBar();
             pictureBox1 = new PictureBox();
@@ -77,6 +78,7 @@
             // 
             // groupBox3
             // 
+            groupBox3.Controls.Add(label1);
             groupBox3.Controls.Add(lblID);
             groupBox3.Controls.Add(vScrollBar1);
             groupBox3.Controls.Add(pictureBox1);
@@ -84,10 +86,19 @@
             groupBox3.Dock = DockStyle.Top;
             groupBox3.Location = new Point(0, 0);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(821, 215);
+            groupBox3.Size = new Size(840, 215);
             groupBox3.TabIndex = 8;
             groupBox3.TabStop = false;
-            groupBox3.Text = "Client";
+            groupBox3.Text = "Use ScrollBar to select client";
+            groupBox3.Enter += groupBox3_Enter;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(509, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 32);
+            label1.TabIndex = 14;
             // 
             // lblID
             // 
@@ -149,7 +160,7 @@
             groupBox1.Dock = DockStyle.Top;
             groupBox1.Location = new Point(0, 215);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(821, 276);
+            groupBox1.Size = new Size(840, 276);
             groupBox1.TabIndex = 11;
             groupBox1.TabStop = false;
             groupBox1.Text = "Balance";
@@ -161,7 +172,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(3, 35);
             panel1.Name = "panel1";
-            panel1.Size = new Size(815, 107);
+            panel1.Size = new Size(834, 107);
             panel1.TabIndex = 11;
             // 
             // txtBalance
@@ -172,7 +183,7 @@
             txtBalance.Location = new Point(0, 0);
             txtBalance.Name = "txtBalance";
             txtBalance.ReadOnly = true;
-            txtBalance.Size = new Size(815, 107);
+            txtBalance.Size = new Size(834, 107);
             txtBalance.TabIndex = 0;
             txtBalance.TabStop = false;
             txtBalance.Text = "250000";
@@ -180,7 +191,7 @@
             // 
             // btnClose
             // 
-            btnClose.Location = new Point(598, 751);
+            btnClose.Location = new Point(598, 1093);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(204, 84);
             btnClose.TabIndex = 6;
@@ -206,7 +217,7 @@
             groupBox2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox2.Location = new Point(0, 491);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(821, 255);
+            groupBox2.Size = new Size(840, 569);
             groupBox2.TabIndex = 13;
             groupBox2.TabStop = false;
             groupBox2.Text = "Transactions";
@@ -215,16 +226,19 @@
             // 
             listView1.BorderStyle = BorderStyle.FixedSingle;
             listView1.Dock = DockStyle.Fill;
+            listView1.GridLines = true;
             listView1.Location = new Point(3, 35);
             listView1.Name = "listView1";
-            listView1.Size = new Size(815, 217);
+            listView1.Size = new Size(834, 531);
             listView1.TabIndex = 0;
             listView1.TabStop = false;
             listView1.UseCompatibleStateImageBehavior = false;
+            listView1.View = View.Details;
+            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
             // 
             // btnPassword
             // 
-            btnPassword.Location = new Point(317, 752);
+            btnPassword.Location = new Point(317, 1093);
             btnPassword.Name = "btnPassword";
             btnPassword.Size = new Size(204, 84);
             btnPassword.TabIndex = 5;
@@ -237,7 +251,7 @@
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = btnClose;
-            ClientSize = new Size(821, 856);
+            ClientSize = new Size(840, 1214);
             Controls.Add(btnPassword);
             Controls.Add(groupBox2);
             Controls.Add(btnClose);
@@ -250,6 +264,9 @@
             Name = "BankApp";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Torrens Bank - ISE102 branch";
+            Activated += BankApp_Activated;
+            FormClosing += BankApp_FormClosing;
+            FormClosed += BankApp_FormClosed;
             Load += BankApp_Load;
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
@@ -278,5 +295,6 @@
         private Button btnPassword;
         private VScrollBar vScrollBar1;
         private Label lblID;
+        private Label label1;
     }
 }

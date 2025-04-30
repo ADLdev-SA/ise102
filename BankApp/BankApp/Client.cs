@@ -3,35 +3,51 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace BankApp
 {
-    //
-    // TO DO:
-    /* 
-    Build the client class here. 
-    This class will be the base class for the clients including: 
-    ID code, name, age, gender, DOB, address, phone number, and email.
-    */
+    // USE THIS CODE TO SHOW INFOR OF CLIENTS
     internal class Client
     {
-     //   private string _ID;
-      //  private string _name;
-            // Properties
-            public string Id { get; set; }
-            public string Name { get; set; }
-
-            public int Balance { get; set; }
-
-        // Constructor
-
-        // Constructor
-        public Client(string id, string name, int balance)
+        private string _name = "";
+        private string _id = "";
+        public string Name 
+        { 
+            get { return _name; }        
+            set 
             {
-                Id = id;
-                Name = name;
-                Balance = balance;
+                if (value != null)
+                    _name = value;
+                else
+                    throw new ArgumentException("Invalid Name");
             }
+        }
+
+        public string ID 
+        {
+            get { return _id; }
+            set
+            {
+                if (value != null)
+                    _id = value;
+                else
+                    throw new ArgumentException("Invalid ID");
+            }
+        }
+
+        public Client(string strID, string strName)
+        {
+            _name = strName;
+            _id = strID;
+        }
+
+        // Virtual method that can be overridden
+        public virtual void SetID(string strID)
+        {
+            // This is very simple SetID() method, student can add their code here
+            _id = strID; 
+        }
     }
     
 }

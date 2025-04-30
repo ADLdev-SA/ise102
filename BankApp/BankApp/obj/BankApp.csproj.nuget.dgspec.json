@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Y:\\WindowsZone\\ISE102\\BankApp\\BankApp\\BankApp.csproj": {}
+    "Y:\\WindowsZone\\ISE102\\Assignment3\\BankApp\\BankApp\\BankApp.csproj": {}
   },
   "projects": {
-    "Y:\\WindowsZone\\ISE102\\BankApp\\BankApp\\BankApp.csproj": {
+    "Y:\\WindowsZone\\ISE102\\Assignment3\\BankApp\\BankApp\\BankApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Y:\\WindowsZone\\ISE102\\BankApp\\BankApp\\BankApp.csproj",
+        "projectUniqueName": "Y:\\WindowsZone\\ISE102\\Assignment3\\BankApp\\BankApp\\BankApp.csproj",
         "projectName": "BankApp",
-        "projectPath": "Y:\\WindowsZone\\ISE102\\BankApp\\BankApp\\BankApp.csproj",
+        "projectPath": "Y:\\WindowsZone\\ISE102\\Assignment3\\BankApp\\BankApp\\BankApp.csproj",
         "packagesPath": "C:\\Users\\b3\\.nuget\\packages\\",
-        "outputPath": "Y:\\WindowsZone\\ISE102\\BankApp\\BankApp\\obj\\",
+        "outputPath": "Y:\\WindowsZone\\ISE102\\Assignment3\\BankApp\\BankApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -48,6 +48,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
