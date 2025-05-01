@@ -13,14 +13,14 @@ This template is used for Assignment 3. Please check Assignment 3 Task for refer
 - Create new methods: Withdraw() and Deposit(). The balance change when you use VScrollBar
 - Modify lines 32-36 in Program.cs to initialize the array for Clients. (you have more properties)
 
-**3. Build Unit Test for the code of the BankAcc class (test two method Withdraw and Deposit)**
+**3. Build Unit Test for the code of the BankAcc class to test method Withdraw() and Deposit()**
 
 **4. Attached documents:**
 - UML diagram describing the flow of BankApp
 - UML diagram describing the Client and BankAcc classes. 
 - Add more UML diagram => bonus mark.
 
-**5. Detail comments.**
+**5. Detail comments (for your code).**
 
 **6. Report has screenshots and notes:**
 - The video presentation must clearly explain these screenshots
