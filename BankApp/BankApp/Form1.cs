@@ -1,14 +1,9 @@
 ﻿using System;
 using System.IO;
-using iTextSharp.text;
-using iTextSharp.text.pdf;
-using Org.BouncyCastle.Asn1.Ocsp;
 namespace BankApp
 {
     public partial class BankApp : Form
     {
-
-
         public BankApp()
         {
             InitializeComponent();

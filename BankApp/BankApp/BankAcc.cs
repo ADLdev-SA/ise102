@@ -39,26 +39,24 @@ namespace BankApp
                 //TODO: Override this method,     
 
             }
-            public bool Withdraw(decimal amount)
-            {
-                
-                // write the code for withdraw
-                // check if the current account have enough money: amount<balance, amount>0
-                // return true if success, otherwise false
 
-                return true;
-            }
+        
+        public bool Withdraw(decimal amount)
+        {
 
-            public bool Deposit(decimal amount)
-            {
-                // write the code for deposit here
-                // check if amount >0
-                // return true if success, otherwise false
-                return true;
-            }
+            // write the code for withdraw
+
+            return true;
+        }
+
+        public bool Deposit(decimal amount)
+        {
+            // write the code for deposit here
+            return true;
+        }
 
 
-            public void Transfer(decimal amount)
+        public void Transfer(decimal amount)
             {
                 // No need; if you want to transfer $10 from A to B, then do like this
                 // A.WithDraw(10)

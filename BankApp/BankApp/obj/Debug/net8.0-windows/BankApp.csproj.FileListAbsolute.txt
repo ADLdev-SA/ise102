@@ -22,7 +22,11 @@ Y:\WindowsZone\ISE102\BankApp\BankApp\bin\Debug\net8.0-windows\BouncyCastle.Cryp
 Y:\WindowsZone\ISE102\BankApp\BankApp\bin\Debug\net8.0-windows\itextsharp.dll
 Y:\WindowsZone\ISE102\BankApp\BankApp\obj\Debug\net8.0-windows\BankApp.csproj.AssemblyReference.cache
 Y:\WindowsZone\ISE102\BankApp\BankApp\obj\Debug\net8.0-windows\BankApp.csproj.Up2Date
-Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\obj\Debug\net8.0-windows\BankApp.csproj.AssemblyReference.cache
+Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\bin\Debug\net8.0-windows\BankApp.exe
+Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\bin\Debug\net8.0-windows\BankApp.deps.json
+Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\bin\Debug\net8.0-windows\BankApp.runtimeconfig.json
+Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\bin\Debug\net8.0-windows\BankApp.dll
+Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\bin\Debug\net8.0-windows\BankApp.pdb
 Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\obj\Debug\net8.0-windows\BankApp.BankApp.resources
 Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\obj\Debug\net8.0-windows\BankApp.frmPassword.resources
 Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\obj\Debug\net8.0-windows\BankApp.frmLogin.resources
@@ -36,13 +40,5 @@ Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\obj\Debug\net8.0-windows\BankA
 Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\obj\Debug\net8.0-windows\BankApp.dll
 Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\obj\Debug\net8.0-windows\refint\BankApp.dll
 Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\obj\Debug\net8.0-windows\BankApp.pdb
-Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\bin\Debug\net8.0-windows\BankApp.exe
-Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\bin\Debug\net8.0-windows\BankApp.deps.json
-Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\bin\Debug\net8.0-windows\BankApp.runtimeconfig.json
-Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\bin\Debug\net8.0-windows\BankApp.dll
-Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\bin\Debug\net8.0-windows\BankApp.pdb
-Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
-Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\bin\Debug\net8.0-windows\itextsharp.dll
-Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\obj\Debug\net8.0-windows\BankApp.csproj.Up2Date
 Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\obj\Debug\net8.0-windows\BankApp.genruntimeconfig.cache
 Y:\WindowsZone\ISE102\Assignment3\BankApp\BankApp\obj\Debug\net8.0-windows\ref\BankApp.dll
