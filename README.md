@@ -1,5 +1,5 @@
 # ISE102 - Introduction to Software Engineering
-## Class Code: 1004
+## Group Assignment Template
 
 This template is used for Assignment 3. Please check Assignment 3 Task for reference. The requirements include:
 
@@ -14,6 +14,8 @@ This template is used for Assignment 3. Please check Assignment 3 Task for refer
 - Modify lines 32-36 in Program.cs to initialize the array for Clients. (you have more properties)
 
 **3. Build Unit Test for the code of the BankAcc class to test method Withdraw() and Deposit()**
+- At least two test cases.
+- Mor test cases => more marks.
 
 **4. Attached documents:**
 - UML diagram describing the flow of BankApp
@@ -23,10 +25,15 @@ This template is used for Assignment 3. Please check Assignment 3 Task for refer
 **5. Detail comments (for your code).**
 
 **6. Report has screenshots and notes:**
-- The video presentation must clearly explain these screenshots
+- The video presentation must clearly explain these screenshots.
 
-**7. Submit Assignment 3:** 
+**7. Create a setup file: deployment
+- Build a setup file (add all dependencies). Set the name of the app like ISE102-CRN915-Group1. Install it to your computer (Window OS).
+- Capture a short video to show your application in Control Panel/Apps. Run the app like video demo.
+
+**8. Submit Assignment 3:** 
 
 - Code zip file + report + recorded video (or link).
+- Remember to put a reference with this template.
 
 **Task Done**
