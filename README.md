@@ -27,7 +27,7 @@ This template is used for Assignment 3. Please check Assignment 3 Task for refer
 **6. Report has screenshots and notes:**
 - The video presentation must clearly explain these screenshots.
 
-**7. Create a setup file: deployment**
+**7. Create a setup file: Deployment.**
 - Build a setup file (add all dependencies). Set the name of the app like ISE102-CRN915-Group1. Install it to your computer (Window OS).
 - Capture a short video to show your application in Control Panel/Apps. Run the app like video demo.
 
