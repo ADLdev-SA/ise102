@@ -1,5 +1,5 @@
-# ISE102 - Introduction to Software Engineering
-## Group Assignment Template
+# ISE102 - Introduction to Software Engineering (TUA)
+## Group Assignment Template (A3)
 
 This template is used for Assignment 3. Please check Assignment 3 Task for reference. The requirements include:
 
@@ -20,7 +20,7 @@ This template is used for Assignment 3. Please check Assignment 3 Task for refer
 **4. Attached documents:**
 - UML diagram describing the flow of BankApp
 - UML diagram describing the Client and BankAcc classes. 
-- Add more UML diagram => bonus mark.
+- At least two diagrams. Add more UML diagram => more mark.
 
 **5. Detail comments (for your code).**
 
@@ -34,7 +34,7 @@ This template is used for Assignment 3. Please check Assignment 3 Task for refer
 **8. Submit Assignment 3:** 
 
 - Code zip file + report + recorded video (or link).
-- Remember to put a reference with this template.
+- Remember to put a reference with this template (add link to Git).
 
 **Task Done**
 
@@ -43,5 +43,5 @@ This template is used for Assignment 3. Please check Assignment 3 Task for refer
 If you download code from GIT and use Visual Studio Community 2022 and encounter error MSB3821 (https://learn.microsoft.com/en-us/visualstudio/msbuild/errors/msb3821?view=vs-2022), fix the issue as follows:
 
 1. Goto menu Tools > Options > Environment > Security. In the Trust Policies, uncheck *Require a trust decision when opening content from the web* then click Ok.
-2. Close the Project, then use File Explorer to find the Project Source Code file. Right-click on the *.resx* files (Form1.rexs, Form2.resx, ..., files to render the design for the Form in VS2022), select Properties. Click check *Unblock* then click Apply.
+2. Close the Project, then use File Explorer to find the Project Source Code file. Right-click on the *.resx* files (Form1.rexs, Form2.resx, ..., XML-based resource file used to store resources for .NET applications), select Properties. Click check *Unblock* then click Apply.
 
