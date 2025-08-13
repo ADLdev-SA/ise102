@@ -37,3 +37,12 @@ This template is used for Assignment 3. Please check Assignment 3 Task for refer
 - Remember to put a reference with this template.
 
 **Task Done**
+
+** Problem with VS 2022**
+
+If you download code from GIT and use Visual Studio Community 2022 and encounter error MSB3821 (https://learn.microsoft.com/en-us/visualstudio/msbuild/errors/msb3821?view=vs-2022), fix the issue as follows:
+
+1. Goto menu Tools > Options > Environment > Security. In the Trust Policies, uncheck *Require a trust decision when opening content from the web. then click Ok*.
+2. Close the Project, then use File Explorer to find the Project Source Code file. Right-click on the *.resx* files (Form1.rexs, Form2.resx, ..., files to render the design for the Form in VS2022), select Properties. Click check *Unblock* then click Apply.
+
+Then you can use it normally.
