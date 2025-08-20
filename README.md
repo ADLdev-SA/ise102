@@ -38,7 +38,7 @@ This template is used for Assignment 3. Please check Assignment 3 Task for refer
 
 **Task Done**
 
-## Problem with VS 2022
+## Problem with VS 2022 - Updated
 
 If you download code from GIT and use Visual Studio Community 2022 and encounter error MSB3821 (https://learn.microsoft.com/en-us/visualstudio/msbuild/errors/msb3821?view=vs-2022), fix the issue as follows:
 
